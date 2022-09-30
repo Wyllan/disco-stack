@@ -1,4 +1,4 @@
-import { createRequestHandler } from "@remix-run/architect";
+import { createRequestHandler } from "@remix-run/deno";
 import * as build from "@remix-run/dev/server-build";
 
 if (process.env.NODE_ENV !== "production") {

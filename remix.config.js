@@ -8,7 +8,7 @@ module.exports = {
   cacheDirectory: "./node_modules/.cache/remix",
   assetsBuildDirectory: "public/build",
   publicPath: "/_static/build/",
-  serverBuildTarget: "arc",
+  serverBuildTarget: "deno",
   server: "./server.ts",
   ignoredRouteFiles: ["**/.*", "**/*.css", "**/*.test.{js,jsx,ts,tsx}"],
   routes(defineRoutes) {
@@ -21,7 +21,7 @@ module.exports = {
 
       route(
         "__tests/create-user",
-        path.relative(appDir, "cypress/support/test-routes/create-user.ts")
+        path.relative(appDir, "cypress/support/test-routes/create-user.ts"),
       );
     });
   },
