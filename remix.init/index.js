@@ -159,12 +159,12 @@ const main = async ({ isTypeScript, packageManager, rootDirectory }) => {
   const fileOperationPromises = [
     fs.writeFile(
       APP_ARC_PATH,
-      appArc.replace("grunge-stack-template", APP_NAME)
+      appArc.replace("disco-stack-template", APP_NAME)
     ),
     fs.writeFile(ENV_PATH, newEnv),
     fs.writeFile(
       README_PATH,
-      readme.replace(new RegExp("RemixGrungeStack", "g"), toLogicalID(APP_NAME))
+      readme.replace(new RegExp("RemixDiscoStack", "g"), toLogicalID(APP_NAME))
     ),
     packageJson.save(),
     fs.copyFile(

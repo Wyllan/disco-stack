@@ -1,5 +1,5 @@
 @app
-grunge-stack-template
+disco-stack-template
 
 @http
 /*
